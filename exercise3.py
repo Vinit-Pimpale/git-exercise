@@ -26,6 +26,7 @@ class Rectangle:
         return self.corner(3)
 
 
+
     def contains(self, point: Point2D, tolerance: float = 0.0) -> bool: # Task B
         ll_px = point.x - self._lower_left.x
         ll_py = point.y - self._lower_left.y
@@ -41,7 +42,6 @@ class Rectangle:
 
     def is_in_interval(self, value: float, min_val: float, max_val: float) -> bool:
         return min_val <= value <= max_val
-
 
 def test_rectangle_contains_exact() -> None:
     rectangle = Rectangle(lower_left=Point2D(1.0, 2.0), dx=2.5, dy=1.5)
