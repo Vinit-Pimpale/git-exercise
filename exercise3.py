@@ -25,11 +25,7 @@ class Rectangle:
     def upper_right(self) -> Point2D:
         return self.corner(3)
 
-    # def contains(self, point: Point2D, tolerance: float = 0.0) -> bool: # Task B
-    def contains(self, point: Point2D) -> bool:
-        # Task A: remove duplication by defining a function
-        #         that checks if a value is within an interval
-        #         and reuse that here.
+    def contains(self, point: Point2D, tolerance: float = 0.0) -> bool: # Task B
         ll_px = point.x - self._lower_left.x
         ll_py = point.y - self._lower_left.y
         return ll_px >= 0 and ll_px <= self._dx \
