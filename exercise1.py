@@ -49,4 +49,3 @@ def test_3d_vector_subtraction() -> None:
     assert isclose(v[0], 4.0)
     assert isclose(v[1], 5.0)
     assert isclose(v[2], 6.0)
-    assert False
